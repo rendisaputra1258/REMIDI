@@ -1,19 +1,13 @@
 <?php
 $merk = [
-    ["Sport Vehicle ( SUV )", "Jeep Compass ", 50000000,"SUV SX1"],
-    ["Sport Vehicle ( SUV )", "Chevy Traverse", 5100000,"SUV SX2"],
-    ["Sport Vehicle ( SUV )", "Ford Escape ", 4910000,"SUV SX3"],
-    ["Sport Vehicle ( SUV )", "Toyota Sequoia ", 3900000,"SUV SX4"],
-    ["Mobil convertible", "Dodge Avenger", 310000,"CX9"],
-    ["Mobil convertible", "Pontiac Sunfire", 3500000,"CX8"],
-    ["Mobil convertible", "Volkswagen New Beetle", 450000,"CX7"],
-    ["Sports Car","Ultima GTR", 270000,"SC4"],
-    ["Sports Car","Bugatti Veyron Super Sport", 2750000,"SC6"],
-    ["Sports Car","SSC Ultimate Aero TT ", 260000,"SC10"],
-    ["Sports Car","Ferrari Enzo ", 2300000,"SC2"],
-    ["Station Wagon","Station Wagon", 3000000,"WXC5"],
-    ["Station Wagon","Honda Accord wagon", 1700000,"WX6"],
-    ["Station Wagon","Volvo 245DL Wagon", 2300000,"WX7"] 
+    ["Sport Vehicle ( SUV )", "Jeep Compass ", 50000000,"1.jpg"],
+    ["Sport Vehicle ( SUV )", "Chevy Traverse", 5100000,"2.jpg"],
+    ["Sport Vehicle ( SUV )", "Ford Escape ", 5910000,"3.jpg"],
+    ["Mobil convertible ", "Ford Escape ", 3910000,"4.jpg"],
+    ["Mobil convertible ", " bmw ", 4500000,"11.jpg"],
+    ["Station Wagon ", "bmw ", 300000,"10.jpg"],
+    ["Station Wagon ", "pajero ", 2500000,"7.jpg"],
+    ["Sports Car", "ferary ", 6000000,"8.jpg"],
 ];
 
 
@@ -86,20 +80,20 @@ if(isset($_POST['filter']))
     <table class="table">
   <thead class="thead-dark">
     <tr>
+      <th scope="col">GAMBAR</th>
       <th scope="col">TYPE</th>
       <th scope="col">MERK</th>
       <th scope="col">HARGA</th>
-      <th scope="col">SERI</th>
     </tr>
   </thead>
   <?php $grand_total=0; ?>
   <?php foreach ($tampilkan_merk as $key => $value): ?>
   <tbody class="bg-light">
     <tr>
+      <td><img src="image/<?php echo $value[3]; ?>" alt="" width="150px" height="100px"></td>
       <td><?php echo $value[0]; ?></td>
       <td><?php echo $value[1]; ?></td>
       <td><?php echo $value[2]; ?></td>
-      <td><?php echo $value[3]; ?></td>
     </tr>
 </tbody>
 <?php $grand_total+=$value[2]; ?>

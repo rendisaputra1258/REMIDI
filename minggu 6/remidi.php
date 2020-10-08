@@ -60,7 +60,7 @@ if(isset($_POST['filter']))
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
      <body class="bg-info">
     <div class="d-flex mx-auto">
-    <h3 class="d-flex mx-auto">JENIS MOBIL DAN SERI</h3>
+    <h3 class="d-flex mx-auto">BEBERAPA JENIS MOBIL DAN HARGANYA</h3>
   </div>
 
   <div class="d-flex">
